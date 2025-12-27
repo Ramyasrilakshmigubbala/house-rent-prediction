@@ -3,6 +3,9 @@ import pandas as pd
 import numpy as np
 import pickle
 
+
+st.image("house.jpg", caption="House Rent Prediction", use_column_width=True)
+
 #load The model
 model = pickle.load(open('house_rent_model.pkl', 'rb'))
 encoder = pickle.load(open('encoder.pkl', 'rb'))
